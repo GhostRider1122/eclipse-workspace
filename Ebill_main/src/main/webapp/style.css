@@ -1,0 +1,201 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: black;
+    color: blue;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info button {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#username {
+    display: block;
+    text-align: left;
+}
+
+.navbar {
+    text-align: center;
+    background-color: darkred;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    background-color: #575757;
+}
+
+/* Style for the active page link */
+.navbar ul li a.active {
+    background-color: #f4f4f9;
+    color: #000000;
+    font-weight: bold;
+}
+
+.navbar button {
+      background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.welcome-page {
+    display: block;
+    text-align: center;
+}
+
+button, select, input {
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.logout {
+    background: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.complaint_container h2 {
+    text-align: start;
+    color: #3300ff;
+    font-weight: bold;
+}
+
+/* complaint page css */
+.complaint_container label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+.complaint_container form label {
+    display: block;
+    align-items: start;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.complaint_container input, select, button, textarea{
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.complaint_container button {
+    cursor: pointer;
+}
+
+.complaint_container .btn {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.complaint_container .reset {
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.692);
+    margin: 5px;
+    color: white;
+    border-radius: 4px;
+    border-color: none;
+
+}
+
+.complaint_container .reset:hover {
+    background-color: rgb(134, 0, 0)
+}
+
+.complaint_container .submit {
+    width: 50%;
+    padding: 10px;
+    background-color: #28a745;
+    margin: 5px;
+    border-radius: 4px;
+    color: white;
+    border-color: none;
+    
+}
+
+.complaint_container .submit:hover {
+    background-color: #218838;
+}
+
+/* Center content styling */
+.center-content {
+    border: 1px solid #ddd;
+    width: 40%; 
+    margin: 10px auto; /* Center-align the div */
+    padding: 20px; /* Optional: Add padding for spacing */
+    box-sizing: border-box;
+}

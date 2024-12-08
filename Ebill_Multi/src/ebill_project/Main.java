@@ -24,7 +24,7 @@ public class Main {
     	
         boolean exit = false;
         while (!exit) {
-            System.out.println("Choose an option:");
+            System.out.println("\nChoose an option:");
             System.out.println("1- Manage Customers");
             System.out.println("2- Manage Bills");
             System.out.println("3- Manage Complaints");
@@ -78,13 +78,13 @@ public class Main {
                 ResultSet rs = pstmt.executeQuery();
                 
                 boolean found = false;
-                System.out.println("Customer Details:");
+                System.out.println("\nCustomer Details:");
+                System.out.println("\nConsumer ID  | Customer Name        | Mobile Number   | Email");
+                System.out.println("---------------------------------------------------------------------");
                 while (rs.next()) {
                 	found = true;
-                    System.out.println("ID: " + rs.getInt("customer_id") +
-                            ", Name: " + rs.getString("title") + " "+ rs.getString("customer_name") +
-                            ", Email: " + rs.getString("email") +
-                            ", Mobile: " + rs.getString("mobile_number"));
+                	System.out.printf("%-12d | %-20s | %-15s | %-25s\n", rs.getInt("customer_id"), rs.getString("title") + " "+ rs.getString("customer_name"), rs.getString("mobile_number"), rs.getString("email"));
+                
                 }
                 
                 if(!found) System.out.println("No customer found matching the given id");
@@ -122,13 +122,13 @@ public class Main {
                 ResultSet rs = pstmt.executeQuery();
                 
                 boolean found = false;
-                System.out.println("Details of customers with unpaid bills:");
+                System.out.println("\nDetails of customers with unpaid bills:");
+                System.out.println("\nConsumer ID  | Customer Name        | Due Amount   | Payable Amount");
+                System.out.println("---------------------------------------------------------------------");
                 while (rs.next()) {
                 	found = true;
-                    System.out.println("ID: " + rs.getInt("customer_id") +
-                            ", Name: " +  rs.getString("customer_name") +
-                            ", Due Amount: " + rs.getDouble("due_amount") +
-                            ", Payable Amount: " + rs.getDouble("payable_amount"));
+                	System.out.printf("%-12d | %-20s | %-12.2f | %-14.2f\n", rs.getInt("customer_id"), rs.getString("customer_name"), rs.getDouble("due_amount"), rs.getDouble("payable_amount"));
+                   
                 }
                 
                 if(!found) System.out.println("No unpaid bills found matching the given id");

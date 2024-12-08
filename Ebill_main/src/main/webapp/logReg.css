@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login_container {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid  rgb(0, 192, 192);
+}
+
+.login_container h2 {
+    text-align: center;
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid  rgb(0, 192, 192);
+}
+
+.container h3 {
+    text-align: start;
+    color: #3300ff;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #ffffff;
+
+}
+
+form label {
+    display: block;
+    align-items: start;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.buttons {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+#acknowledgment {
+    text-align: center;
+}
+
+#acknowledgment button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.container label::before {
+    content: "* ";
+    color: red;
+    display: inline;
+}
+
+.reset {
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.692);
+    margin: 5px;
+    color: white;
+    border-radius: 4px;
+    border-color: none;
+
+}
+
+.reset:hover {
+    background-color: rgb(134, 0, 0)
+}
+
+.submit {
+    width: 50%;
+    padding: 10px;
+    background-color: lime;
+    margin: 5px;
+    border-radius: 4px;
+    color: white;
+    border-color: none;
+    
+}
+
+.submit:hover {
+    background-color: green;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration:underline;
+}
